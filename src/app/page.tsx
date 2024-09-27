@@ -15,7 +15,7 @@ export default function Home() {
           <div className=" max-w-[301px] w-[100%] flex flex-col items-start">
             <div>
               <div className="text-transparent font-bold text-center text-[16px] vsm:text-[20px] sm:text-[35px] md:text-[50px] lg:text-[60px] leading-[18px] vsm:leading-[23px] sm:leading-[40px] md:leading-[45px] lg:leading-[63px] bg-[url('/recycle_no.jpg')] 
-              bg-center bg-no-repeat bg-clip-text bg-cover bg-[calc(50%_20%)] w-full bg-[length:200%_230%]">
+              bg-center bg-no-repeat bg-clip-text w-full bg-[length:200%_230%]">
                 670,978
               </div>
               <div className="text-[8px] vsm:text-[10px] sm:text-[15px] md:text-[25px] leading-[10px] sm:leading-[17px] md:leading-[25px] text-center font-bold mt-1 sm:mt-2 lg:mt-3">
@@ -26,7 +26,7 @@ export default function Home() {
           <div className="h-[18px] md:h-[81px] w-[0.5px] bg-slate-100"></div>
           <div className="max-w-[301px] w-[100%]">
           <div className="text-transparent font-bold text-center text-[16px] vsm:text-[20px] sm:text-[35px] md:text-[50px] lg:text-[60px] leading-[18px] vsm:leading-[23px] sm:leading-[40px] md:leading-[45px] lg:leading-[63px] bg-[url('/recycle_no.jpg')] 
-          bg-center bg-no-repeat bg-clip-text bg-cover bg-[calc(50%_20%)] w-full bg-[length:200%_400%]">
+          bg-center bg-no-repeat bg-clip-text w-full bg-[length:200%_400%]">
                 3,310,000
               </div>
             <div className="text-[8px] vsm:text-[10px] sm:text-[15px] md:text-[25px] leading-[10px] sm:leading-[17px] md:leading-[25px] text-center font-bold mt-1 sm:mt-2 lg:mt-3">
