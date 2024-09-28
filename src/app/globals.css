@@ -8,12 +8,19 @@
 }
 
 @font-face {
-  font-family: 'SF Pro Display';
-  src: url('../app/fonts/SF-Pro.woff2') format('woff2');
+  font-family: "SF Pro Display";
+  src: url("../app/fonts/SF-Pro.woff2") format("woff2");
   font-display: swap;
 }
 
-
 body {
-  font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-family:
+    "SF Pro Display",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
 }
