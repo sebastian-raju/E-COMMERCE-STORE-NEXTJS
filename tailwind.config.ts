@@ -14,17 +14,25 @@ const config: Config = {
       sm: "485px",
       // => @media (min-width: 485px) { ... }
 
+      msm: "576px",
+      // => @media (min-width: 485px) { ... }
+
       md: "768px",
       // => @media (min-width: 768px) { ... }
 
       mlg: "872px",
       // => @media (min-width: 860px) { ... }
 
+      xlg: "991px",
+
       lg: "1024px",
       // => @media (min-width: 1024px) { ... }
 
       xl: "1280px",
       // => @media (min-width: 1280px) { ... }
+
+      "1xl": "1390px",
+      // => @media (min-width: 1390px) { ... }
 
       "2xl": "1536px",
       // => @media (min-width: 1536px) { ... }
