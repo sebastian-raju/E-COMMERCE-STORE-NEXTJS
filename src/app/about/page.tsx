@@ -23,16 +23,6 @@ export default function about() {
         </div>
       </div>
 
-      {/* <div className="hero-section w-[100%] max-w-[1530px] relative text-white h-[365px] flex items-center">
-        <img src="/placeholder1.jpg" className="w-[100%] object-contain" alt="" />
-        <div className="hero-details absolute px-[100px] top-1/2 transform -translate-y-1/2">
-          <div>About Us</div>
-          <div>Hey There</div> 
-          <div>Welcome to Zalomi!</div>
-          <div>where we’re redefining tech with quality, affordability,  and sustainability</div>
-        </div>
-      </div> */}
-
       <div className="mt-[46px] flex w-[100%] justify-center px-[34px] sm:px-[40px] md:px-[70px] lg:px-[95px] xl:mt-[40px] xl:px-[142px]">
         <div className="mb-[30px] flex w-[100%] max-w-[1210px] flex-col gap-[15px] text-[14px] leading-[16.71px] text-[#383838] sm:gap-[25px] sm:text-[18px] sm:leading-[25px] md:gap-[45px] md:text-[22px] md:leading-[30px] lg:mb-[0px] lg:gap-[50px] lg:text-[26px] lg:leading-[36px] xl:text-[32px] xl:leading-[42px]">
           <span className="text-justify">
@@ -56,14 +46,6 @@ export default function about() {
         </div>
       </div>
 
-      {/* <div className="w-[100%] max-w-[1530px] flex justify-center xlg:px-[100px] xlg:mt-[45px]">
-        <div className="w-[100%] flex flex-col gap-[48px]">
-          <span className="text-justify">In a world where technology can feel beyond reach, we firmly believe it should be within everyone's grasp. When we say, "Affordable to people and adaptable to the planet,"  it's not just a statement — it’s a promise.</span>
-          
-          <span className="text-justify">Big corporations and retailers discard millions of products every year, missing out on opportunities for consumers like us and at Zalomi, we partner with these giants to bring you these less used pre-owned products at unbeatable discounts without compromising on quality. Whether you choose open-box or pre-owned, rest assured, every product has passed our rigorous quality checks and comes with a warranty ranging from 3 to 12 months. Our commitment to you begins the moment you make a purchase from us, and we're here to provide ongoing support and assistance for the lifetime.</span>
-        </div>
-      </div> */}
-
       <div className="flex w-[100%] justify-center px-[34px] sm:px-[40px] md:px-[70px] lg:mb-[45px] lg:mt-[45px] lg:px-[95px] xl:mb-[60px] xl:mt-[60px] xl:px-[142px]">
         <div className="w-[100%] max-w-[1210px]">
           <div className="text-[26px] font-[700] leading-[31.03px] lg:text-[36px] lg:leading-[40px] xl:text-[42px] xl:leading-[50.13px]">
@@ -77,22 +59,11 @@ export default function about() {
         </div>
       </div>
 
-      {/* <div className="w-[100%] max-w-[1530px] flex justify-center xlg:px-[100px] xlg:mt-[60px]">
-        <div className="w-[100%]">
-          <div className="">Sustainability is Our Core</div>
-          <img src="/underline.svg" className="" alt="" />
-        </div>
-      </div> */}
-
       <div className="mb-[50px] flex w-[100%] justify-center">
         <div className="w-[100%] max-w-[1210px]">
           <img src="/switch.jpg" className="w-[100%]" alt="" />
         </div>
       </div>
-
-      {/* <div className="w-[100%] max-w-[1530px] flex justify-center xlg:px-[100px]">
-        <img src="/switch.jpg" className="w-[100%]" alt="" />
-      </div> */}
 
       <div className="flex w-[100%] justify-center px-[34px] sm:px-[40px] md:px-[70px] lg:px-[95px] xl:px-[142px]">
         <div className="flex w-[100%] max-w-[1210px] flex-col gap-[15px] text-[14px] leading-[16.71px] sm:gap-[25px] sm:text-[18px] sm:leading-[25px] md:gap-[45px] md:text-[22px] md:leading-[30px] lg:gap-[50px] lg:text-[26px] lg:leading-[36px] xl:text-[32px] xl:leading-[42px]">
@@ -116,15 +87,6 @@ export default function about() {
           </span>
         </div>
       </div>
-
-      {/* <div className="w-[100%] max-w-[1530px] flex justify-center xlg:px-[100px] xlg:mt-[45px]">
-        <div className="w-[100%] flex flex-col gap-[48px]">
-        <span className="text-justify">At Zalomi, we stand by two key principles: accessibility and sustainability . Our renewed gadgets aren’t just renewed; they’re remanufactured to be as good as new- Its Renewed. This not only extends their lifespan but also significantly reduces environmental impact by manufacturing the new product. By choosing renewed devices, you’re taking a stand against the throwaway culture to buy new one and contributing to a greener future for the generations to come. Feel good about your choices and inspire others to do the same. Be part of a growing community of eco-conscious consumers making a real difference in this world. Your voice matters, and your choices resonate. Let’s pave the way for a brighter, more sustainable world together.
-          </span>
-          
-          <span className="text-justify">Welcome to Zalomi. Let’s make a difference!</span>
-        </div>
-      </div> */}
 
       <div className="mt-[30px] flex w-[100%] justify-center bg-[#F9F9F9] px-[34px] sm:px-[40px] md:px-[70px] lg:px-[95px] xl:mt-[60px] xl:px-[142px]">
         <div className="w-[100%] max-w-[1210px]">
@@ -171,32 +133,6 @@ export default function about() {
               Our 24-point quality check not limited to :
             </div>
 
-            {/* <div className="py-[10px] px-[20px] lg:flex lg:gap-[20px] lg:items-center">
-              <div className="col-span-2 font-[500] lg:text-[0.8125rem] 1xl:text-[0.875rem] 1xl:leading-[1.375rem] flex items-center gap-[15px]">
-                <img src="/battery.svg" className= w-[18px] h-[18px]"sm:w-[24px] sm:h-[24px] 1xl:w-[30px] 1xl:h-[30px]" alt="" />
-                <div>Battery Condition</div>
-              </div>
-              <div className="text-[16px] w-[1px] leading-[1.406px] h-[15px] bg-[#B4B4B4]"></div>
-              <div className="col-span-2 font-[500] xl:text-[0.875rem] xl:leading-[1.375rem] flex items-center gap-[15px]">
-                <img src="/battery.svg" alt="" />
-                <div>Battery Condition</div>
-              </div>
-              <div className="text-[16px] w-[1px] leading-[1.406px] h-[15px] bg-[#B4B4B4]"></div>
-              <div className="col-span-2 font-[500] xl:text-[0.875rem] xl:leading-[1.375rem] flex items-center gap-[15px]">
-                <img src="/battery.svg" alt="" />
-                <div>Battery Condition</div>
-              </div>
-              <div className="text-[16px] w-[1px] leading-[1.406px] h-[15px] bg-[#B4B4B4]"></div>
-              <div className="col-span-2 font-[500] xl:text-[0.875rem] xl:leading-[1.375rem] flex items-center gap-[15px]">
-                <img src="/battery.svg" alt="" />
-                <div>Battery Condition</div>
-              </div>
-              <div className="text-[16px] w-[1px] leading-[1.406px] h-[15px] bg-[#B4B4B4]"></div>
-              <div className="col-span-2 font-[500] xl:text-[0.875rem] xl:leading-[1.375rem] flex items-center gap-[15px]">
-                <img src="/battery.svg" alt="" />
-                <div>Battery Condition</div>
-              </div>
-            </div> */}
 
             <div className="grid grid-cols-2 items-center gap-[12px] rounded-[6px] px-[0px] py-[6px] lg:mb-[28px] lg:grid-cols-[auto_1px_auto_1px_auto_1px_auto_1px_auto] lg:gap-[20px] lg:border-[1px] lg:border-[#A8A9AD] lg:px-[20px] xl:mb-[30px]">
               <div className="flex items-center justify-center gap-[10px] rounded-[4px] border-[0.5px] border-[#B4B4B4] text-[0.625rem] font-[500] leading-[1.406rem] sm:gap-[15px] md:text-[0.75rem] md:leading-[1.406rem] lg:border-none lg:text-[0.80rem] lg:leading-[1.406rem] xl:text-[0.76rem] xl:leading-[1.27rem] 1xl:text-[0.80rem] 1xl:leading-[1.375rem]">
@@ -437,29 +373,6 @@ export default function about() {
         </div>
       </div>
 
-      {/* <div className="w-[100%] max-w-[1530px] flex flex-col items-center xlg:mt-[60px] bg-[#F9F9F9] xlg:pt-[60px] xlg:pb-[30px]">
-        <div className="w-[100%] max-w-[1530px] xlg:px-[100px]">
-          <div className="relative w-[100%] flex justify-start mb-[45px]">
-            <div className="text-[40px]">Why chose <span className="text-[#6EBF4F]">Zalomi?</span></div>
-          </div>
-          <div className="text-[20px] w-[100%] max-w-[600px] xlg:pb-[38px]">Here are the key factors that make Zalomi exceptional compared to every other team in the industry</div>
-
-          <div className="rounded-[8px] bg-white px-[40px]">
-          <div className=" text-[#00A6E9] font-[600]">1.</div>
-          <div className="font-[700]">Guaranteed Quality</div>
-          <div className="">At Zalomi, we go above and beyond to ensure you get a product you can trust without the never ending product complaints from normal refurbished/used products in the market. At Zalomi, each device undergoes our exclusive rigorous 3 level 24 point core testing and ensures our high standards of quality of product performance . With our comprehensive warranties and customer support, you can buy with confidence, knowing you’re backed by a team dedicated to your satisfaction as well as product quality. Join the countless customers who have made the switch to Zalomi and never looked back.</div>
-          </div>
-
-
-          <div className="rounded-[8px] bg-white px-[40px] mt-[15px]">
-            <div className=" text-[#00A6E9] font-[600]">2.</div>
-            <div className="font-[700]">Guaranteed Quality</div>
-            <div className="">At Zalomi, we go above and beyond to ensure you get a product you can trust without the never ending product complaints from normal refurbished/used products in the market. At Zalomi, each device undergoes our exclusive rigorous 3 level 24 point core testing and ensures our high standards of quality of product performance . With our comprehensive warranties and customer support, you can buy with confidence, knowing you’re backed by a team dedicated to your satisfaction as well as product quality. Join the countless customers who have made the switch to Zalomi and never looked back.</div>
-          </div>
-
-        </div>
-      </div> */}
-
       <div className="flex w-[100%] justify-center px-[34px] py-[20px] sm:px-[40px] md:px-[70px] md:py-[30px] lg:px-[95px] xl:px-[142px] xl:py-[60px] xl:pt-[55px]">
         <div className="flex w-[100%] max-w-[1210px] justify-center">
           <div className="flex max-w-[236px] flex-col items-center">
@@ -507,18 +420,6 @@ export default function about() {
         </div>
       </div>
 
-      {/* <div className="w-[100%] max-w-[1530px] flex justify-center px-[100px] xlg:py-[30px]">
-        <div className="w-[100%] flex flex-col items-center justify-center">
-          <div className="">Connect with us</div>
-
-          <div className="w-[100%] flex justify-center items-center gap-[10px]">
-            <img src="/facebook.svg" className="w-[20px] h-[20px]" alt="" />
-            <img src="/facebook.svg" className="w-[20px] h-[20px]" alt="" />
-            <img src="/facebook.svg" className="w-[20px] h-[20px]" alt="" />
-            <img src="/facebook.svg" className="w-[20px] h-[20px]" alt="" />
-          </div>
-        </div>
-      </div> */}
 
       <div className="flex w-[100%] justify-center">
         <div className="flex w-[100%] max-w-[1512px] flex-col items-center justify-center bg-[url('/zalomiFooter.jpg')] bg-cover bg-center bg-no-repeat sm:bg-[url('/footer2.jpg')] xl:bg-top">
@@ -533,10 +434,6 @@ export default function about() {
           </div>
         </div>
       </div>
-
-      {/* <div className="w-[100%] max-w-[1530px]">
-        <img src="/footer2.jpg" className="w-[100%]" alt="" />
-      </div> */}
     </div>
   );
 }
