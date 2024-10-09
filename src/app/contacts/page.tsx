@@ -66,7 +66,7 @@ export default function contacts() {
           </div>
           <div className="mt-[58px] pb-[30px] block lg:hidden">
             <div className="text-center text-[13px] font-[500] tracking-tighter text-black">
-              any queries, don't hesitate to reach out. We're here to help!
+              any queries, don&apos;t hesitate to reach out. We&apos;re here to help!
             </div>
             <div className="mt-[14px] flex flex-wrap items-center justify-center gap-[15px]">
               <div className="rounded-[8px] border border-gray-200 bg-white px-[15px] py-[5px] text-[16px] tracking-tighter">

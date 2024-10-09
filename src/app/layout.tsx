@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -12,8 +13,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`antialiased`}>{children}</body>
-    </html>
+      <html lang="en">
+        <body className={`antialiased`}>
+          <div className="w-[100%] flex justify-center">
+            <div className="h-[30px] bg-white w-[100%] max-w-[1024px] px-[30px] flex justify-start gap-[20px]">
+            <Link href={'/'}>Home</Link>
+              <Link href={'/about'}>About</Link>
+              <Link href={'/blogs'}>Blogs</Link>
+              <Link href={'/contacts'}>Contacts</Link>
+            </div>
+          </div>
+          {children}
+        </body>
+      </html>
   );
 }

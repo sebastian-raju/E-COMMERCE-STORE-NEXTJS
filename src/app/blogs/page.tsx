@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function blogs() {
   return (
     <div className="blog-section flex w-[100%] flex-col items-center">
@@ -19,10 +21,13 @@ export default function blogs() {
               className="w-[100%] rounded-[6px] py-[9px] ps-[40px] outline-none ring-2 ring-gray-200 placeholder:text-[12px] placeholder:leading-[24px] placeholder:tracking-tight placeholder:text-gray-700 lg:py-[12px] lg:pe-[16px] lg:ps-[44px] lg:placeholder:text-[16px] lg:placeholder:leading-[24px]"
               id=""
             />
-            <img
+            <Image
               src="/searchIcon.svg"
               className="absolute left-[14px] top-[12px] h-[18px] w-[18px] lg:left-[16px] lg:top-[14px] lg:h-[20px] lg:w-[20px]"
-              alt=""
+              alt="search icon"
+              width={100}
+              height={100}
+              unoptimized
             />
           </div>
         </div>
@@ -35,10 +40,13 @@ export default function blogs() {
             <div className="">Sort by: </div>
             <div className="">View all</div>
             <button className="m2-1 flex h-[22px] w-[22px] items-center justify-center">
-              <img
+              <Image
                 src="arrow_up.svg"
                 className="h-[6.15px] w-[10.37px]"
-                alt=""
+                alt="arrow up icon"
+                width={100}
+                height={100}
+                unoptimized
               />
             </button>
           </div>
@@ -76,10 +84,13 @@ export default function blogs() {
           <div className="mb-[32px] flex flex-col gap-[32px] lg:mb-[60px] lg:flex-row">
             <div className="flex flex-1 flex-col gap-[32px]">
               <div className="h-[228px] w-[100%] md:h-[100%] lg:min-h-[220px] xl:max-h-[220px]">
-                <img
+                <Image
                   src="/blogSmartPhone.jpg"
                   className="h-[100%] w-[100%] object-cover"
-                  alt=""
+                  alt="blog smartphone"
+                  width={100}
+                  height={100}
+                  unoptimized
                 />
               </div>
               <div className="flex-1">
@@ -88,18 +99,21 @@ export default function blogs() {
                 </div>
                 <div className="flex items-start justify-between">
                   <div className="mb-[12px] flex-1 text-[20px] font-[700] leading-[28px] vsm:text-[24px] vsm:leading-[32px] lg:text-[24px] lg:leading-[32px]">
-                    5 Essential Tips to Extend Your Smartphone's Lifespan
+                    5 Essential Tips to Extend Your Smartphone&apos;s Lifespan
                   </div>
                   <div className="mt-[10px] w-[10px]">
-                    <img
+                    <Image
                       src="/upperArrow.svg"
                       className="h-[10px] w-[10px]"
-                      alt=""
+                      alt="upper arrow icon"
+                      width={100}
+                      height={100}
+                      unoptimized
                     />
                   </div>
                 </div>
                 <div className="text-[14px] leading-[24px] text-[#667085]">
-                  In today's digital age, smartphones have become an integral
+                  In today&apos;s digital age, smartphones have become an integral
                   part of our daily lives. While the average lifespan of these
                   devices is around 18 months, with proper care, they can easily
                   last up to five years....
@@ -110,10 +124,13 @@ export default function blogs() {
             <div className="flex flex-1 flex-col justify-between gap-[32px]">
               <div className="flex flex-col gap-[24px] md:flex-row">
                 <div className="h-[228px] w-[100%] md:h-[100%] md:flex-1 lg:min-h-[200px]">
-                  <img
+                  <Image
                     src="/gadgetBlog.jpg"
                     className="h-[100%] w-[100%] object-cover"
-                    alt=""
+                    alt="gadget blog"
+                    width={100}
+                    height={100}
+                    unoptimized
                   />
                 </div>
                 <div className="md:flex-1">
@@ -122,14 +139,17 @@ export default function blogs() {
                   </div>
                   <div className="flex items-start justify-between gap-[5px] lg:gap-[8px]">
                     <div className="mb-[8px] flex-1 text-[20px] font-[700] leading-[28px] vsm:text-[24px] vsm:leading-[32px] md:text-[16px] md:leading-[28px]">
-                      Why Zalomi's Renewed Gadgets Are Crushing the Competition
+                      Why Zalomi&apos;s Renewed Gadgets Are Crushing the Competition
                       in the UAE
                     </div>
                     <div className="mt-[10px]">
-                      <img
+                      <Image
                         src="/upperArrow.svg"
                         className="h-[10px] w-[10px]"
-                        alt=""
+                        alt="upper arrow icon"
+                        width={100}
+                        height={100}
+                        unoptimized
                       />
                     </div>
                   </div>
@@ -141,10 +161,13 @@ export default function blogs() {
               </div>
               <div className="flex flex-col gap-[24px] md:flex-row">
                 <div className="h-[228px] w-[100%] md:h-[100%] md:flex-1 lg:min-h-[200px]">
-                  <img
+                  <Image
                     src="/desktopBlog.jpeg"
                     className="h-[100%] w-[100%] object-cover"
-                    alt=""
+                    alt="desktop blog"
+                    width={100}
+                    height={100}
+                    unoptimized
                   />
                 </div>
                 <div className="md:flex-1">
@@ -153,14 +176,17 @@ export default function blogs() {
                   </div>
                   <div className="flex items-start justify-between gap-[5px] lg:gap-[8px]">
                     <div className="mb-[8px] flex-1 text-[20px] font-[700] leading-[28px] vsm:text-[24px] vsm:leading-[32px] md:text-[16px] md:leading-[28px]">
-                      Why Zalomi's Renewed Gadgets Are Crushing the Competition
+                      Why Zalomi&apos;s Renewed Gadgets Are Crushing the Competition
                       in the UAE
                     </div>
                     <div className="mt-[8px]">
-                      <img
+                      <Image
                         src="/upperArrow.svg"
                         className="h-[10px] w-[10px]"
-                        alt=""
+                        alt="upper arrow"
+                        width={100}
+                        height={100}
+                        unoptimized
                       />
                     </div>
                   </div>
@@ -175,15 +201,21 @@ export default function blogs() {
 
           <div className="grid grid-cols-12 gap-x-[0px] gap-y-[32px] md:gap-x-[32px]">
             <div className="col-span-12 md:col-span-6">
-              <img
+              <Image
                 src="/refurbished.jpg"
                 className="hidden w-[100%] object-cover sm:block sm:h-[228px] md:h-[100%]"
-                alt=""
+                alt="refurbished"
+                width={100}
+                height={100}
+                unoptimized
               />
-              <img
+              <Image
                 src="/refurbishedSmall.jpg"
                 className="block h-[228px] w-[100%] object-cover sm:hidden"
-                alt=""
+                alt="refurbished"
+                width={100}
+                height={100}
+                unoptimized
               />
             </div>
             <div className="col-span-12 md:col-span-6">
@@ -192,18 +224,21 @@ export default function blogs() {
               </div>
               <div className="flex items-start justify-between">
                 <div className="mb-[12px] flex-1 text-[20px] font-[700] leading-[28px] vsm:text-[24px] vsm:leading-[32px] lg:text-[24px] lg:leading-[32px]">
-                  5 Essential Tips to Extend Your Smartphone's Lifespan
+                  5 Essential Tips to Extend Your Smartphone&apos;s Lifespan
                 </div>
                 <div className="mt-[10px] w-[10px]">
-                  <img
+                  <Image
                     src="/upperArrow.svg"
                     className="h-[10px] w-[10px]"
-                    alt=""
+                    alt="upper arrow"
+                    width={100}
+                    height={100}
+                    unoptimized
                   />
                 </div>
               </div>
               <div className="text-[14px] leading-[24px] text-[#667085]">
-                In today's digital age, smartphones have become an integral part
+                In today&apos;s digital age, smartphones have become an integral part
                 of our daily lives. While the average lifespan of these devices
                 is around 18 months, with proper care, they can easily last up
                 to five years....
@@ -228,10 +263,13 @@ export default function blogs() {
             <div className="grid grid-cols-12 gap-x-[0px] gap-y-[32px] md:gap-x-[32px] md:gap-y-[32px]">
               <div className="col-span-12 md:col-span-6 xl:col-span-4">
                 <div className="h-[240px] w-[100%]">
-                  <img
+                  <Image
                     src="/blogBall.jpg"
                     className="h-[100%] w-[100%] object-cover"
-                    alt=""
+                    alt="blog ball"
+                    width={100}
+                    height={100}
+                    unoptimized
                   />
                 </div>
                 <div className="mt-[32px]">
@@ -240,14 +278,17 @@ export default function blogs() {
                   </div>
                   <div className="flex items-start justify-between">
                     <div className="mb-[12px] max-w-[344px] flex-1 text-[20px] font-[700] vsm:text-[24px] vsm:leading-[28px]">
-                      Why Zalomi's Renewed Gadgets Are Crushing the Competition
+                      Why Zalomi&apos;s Renewed Gadgets Are Crushing the Competition
                       in the UAE
                     </div>
                     <div className="mt-[10px] w-[10px]">
-                      <img
+                      <Image
                         src="/upperArrow.svg"
                         className="h-[10px] w-[10px]"
-                        alt=""
+                        alt="upper arrow"
+                        width={100}
+                        height={100}
+                        unoptimized
                       />
                     </div>
                   </div>
@@ -260,10 +301,13 @@ export default function blogs() {
 
               <div className="col-span-12 md:col-span-6 xl:col-span-4">
                 <div className="h-[240px] w-[100%]">
-                  <img
+                  <Image
                     src="/blogGuide.jpg"
                     className="h-[100%] w-[100%] object-cover"
-                    alt=""
+                    alt="blog guide"
+                    width={100}
+                    height={100}
+                    unoptimized
                   />
                 </div>
                 <div className="mt-[32px]">
@@ -272,14 +316,17 @@ export default function blogs() {
                   </div>
                   <div className="flex items-start justify-between">
                     <div className="mb-[12px] max-w-[344px] flex-1 text-[20px] font-[700] vsm:text-[24px] vsm:leading-[28px]">
-                      Why Zalomi's Renewed Gadgets Are Crushing the Competition
+                      Why Zalomi&apos;s Renewed Gadgets Are Crushing the Competition
                       in the UAE
                     </div>
                     <div className="mt-[10px] w-[10px]">
-                      <img
+                      <Image
                         src="/upperArrow.svg"
                         className="h-[10px] w-[10px]"
-                        alt=""
+                        alt="upper arrow"
+                        width={100}
+                        height={100}
+                        unoptimized
                       />
                     </div>
                   </div>
@@ -292,10 +339,13 @@ export default function blogs() {
 
               <div className="col-span-12 md:col-span-6 xl:col-span-4">
                 <div className="h-[240px] w-[100%]">
-                  <img
+                  <Image
                     src="/blogTips.jpg"
                     className="h-[100%] w-[100%] object-cover"
-                    alt=""
+                    alt="blog tips"
+                    width={100}
+                    height={100}
+                    unoptimized
                   />
                 </div>
                 <div className="mt-[32px]">
@@ -304,14 +354,17 @@ export default function blogs() {
                   </div>
                   <div className="flex items-start justify-between">
                     <div className="mb-[12px] max-w-[344px] flex-1 text-[20px] font-[700] vsm:text-[24px] vsm:leading-[28px]">
-                      Why Zalomi's Renewed Gadgets Are Crushing the Competition
+                      Why Zalomi&apos;s Renewed Gadgets Are Crushing the Competition
                       in the UAE
                     </div>
                     <div className="mt-[10px] w-[10px]">
-                      <img
+                      <Image
                         src="/upperArrow.svg"
                         className="h-[10px] w-[10px]"
-                        alt=""
+                        alt="upper arrow"
+                        width={100}
+                        height={100}
+                        unoptimized
                       />
                     </div>
                   </div>
@@ -324,10 +377,13 @@ export default function blogs() {
 
               <div className="col-span-12 md:col-span-6 xl:col-span-4">
                 <div className="h-[240px] w-[100%]">
-                  <img
+                  <Image
                     src="/blogBall.jpg"
                     className="h-[100%] w-[100%] object-cover"
-                    alt=""
+                    alt="blog ball"
+                    width={100}
+                    height={100}
+                    unoptimized
                   />
                 </div>
                 <div className="mt-[32px]">
@@ -336,14 +392,17 @@ export default function blogs() {
                   </div>
                   <div className="flex items-start justify-between">
                     <div className="mb-[12px] max-w-[344px] flex-1 text-[20px] font-[700] vsm:text-[24px] vsm:leading-[28px]">
-                      Why Zalomi's Renewed Gadgets Are Crushing the Competition
+                      Why Zalomi&apos;s Renewed Gadgets Are Crushing the Competition
                       in the UAE
                     </div>
                     <div className="mt-[10px] w-[10px]">
-                      <img
+                      <Image
                         src="/upperArrow.svg"
                         className="h-[10px] w-[10px]"
-                        alt=""
+                        alt="upper arrow"
+                        width={100}
+                        height={100}
+                        unoptimized
                       />
                     </div>
                   </div>
@@ -356,10 +415,13 @@ export default function blogs() {
 
               <div className="col-span-12 md:col-span-6 xl:col-span-4">
                 <div className="h-[240px] w-[100%]">
-                  <img
+                  <Image
                     src="/blogGuide.jpg"
                     className="h-[100%] w-[100%] object-cover"
-                    alt=""
+                    alt="blog guide"
+                    width={100}
+                    height={100}
+                    unoptimized
                   />
                 </div>
                 <div className="mt-[32px]">
@@ -368,30 +430,36 @@ export default function blogs() {
                   </div>
                   <div className="flex items-start justify-between">
                     <div className="mb-[12px] max-w-[344px] flex-1 text-[20px] font-[700] vsm:text-[24px] vsm:leading-[28px]">
-                      Why Zalomi's Renewed Gadgets Are Crushing the Competition
+                      Why Zalomi&apos;s Renewed Gadgets Are Crushing the Competition
                       in the UAE
                     </div>
                     <div className="mt-[10px] w-[10px]">
-                      <img
+                      <Image
                         src="/upperArrow.svg"
                         className="h-[10px] w-[10px]"
-                        alt=""
+                        alt="upper arrow"
+                        width={100}
+                        height={100}
+                        unoptimized
                       />
                     </div>
                   </div>
                   <div className="text-[14px] leading-[24px] text-[#667085]">
                     Are you tired of overpaying for tech gadgets or settling for
-                    subpar quality?{" "}
+                    subpar quality?
                   </div>
                 </div>
               </div>
 
               <div className="col-span-12 md:col-span-6 xl:col-span-4">
                 <div className="h-[240px] w-[100%]">
-                  <img
+                  <Image
                     src="/blogTips.jpg"
                     className="h-[100%] w-[100%] object-cover"
-                    alt=""
+                    alt="blog tips"
+                    width={100}
+                    height={100}
+                    unoptimized
                   />
                 </div>
                 <div className="mt-[32px]">
@@ -400,14 +468,17 @@ export default function blogs() {
                   </div>
                   <div className="flex items-start justify-between">
                     <div className="mb-[12px] max-w-[344px] flex-1 text-[20px] font-[700] vsm:text-[24px] vsm:leading-[28px]">
-                      Why Zalomi's Renewed Gadgets Are Crushing the Competition
+                      Why Zalomi&apos;s Renewed Gadgets Are Crushing the Competition
                       in the UAE
                     </div>
                     <div className="mt-[10px] w-[10px]">
-                      <img
+                      <Image
                         src="/upperArrow.svg"
                         className="h-[10px] w-[10px]"
-                        alt=""
+                        alt="upper arrow"
+                        width={100}
+                        height={100}
+                        unoptimized
                       />
                     </div>
                   </div>
