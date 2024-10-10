@@ -1,10 +1,61 @@
+'use client'
 import { GradualSpacing } from "@/components/ui/GradualSpacing";
 import { NumberTicker } from "@/components/ui/NumberTicker";
 import { greenCard, heroNumberSection, impactCard } from "@/components/pages/home";
 import { impactList, sustainabilityList } from "@/data/data";
 import Image from "next/image";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 export default function Home() {
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  useGSAP(()=>{
+    gsap.from('.impactCard',{
+      opacity: 0,
+      duration: 1,
+      delay: 0,
+      y: 40,
+      stagger:1,
+      scrollTrigger:{
+        trigger:'.impactCard',
+        start:'top 90%',
+        end:'top 70%',
+        markers: true,
+        scroller:'body',
+        scrub: 2
+      }
+    })
+
+    gsap.from('.sustainCard', {
+      opacity: 0,
+      duration: 1,
+      delay: 0,
+      y: 40,
+      stagger:1,
+      scrollTrigger:{
+        trigger:'.sustainCard',
+        start:'top 90%',
+        end:'top 70%',
+        markers: true,
+        scroller:'body',
+        scrub: 2
+      }
+    })
+
+    gsap.to('.icon-shake',{
+      rotation: 10,    
+      yoyo: true, 
+      repeat: -1, 
+      duration: 0.1,
+      ease: "power1.inOut" 
+    })
+  })
+
+
+
   return (
     <div className="flex w-full flex-col items-center">
       {/* hero-section */}
@@ -61,7 +112,8 @@ export default function Home() {
         <div className="impact_grid grid w-[100%] grid-cols-12 gap-[14px] md:gap-[22px]">
 
           {
-            impactList?.map((impact) => <div key={impact.title} className={impactCard.card}>
+            impactList?.map((impact) => 
+            <div className={`${impactCard.card} impactCard`}>
             <div className={impactCard.iconContainer}>
               <div className={`icon_image ${impactCard.icon}`}>
                 <Image
@@ -78,7 +130,7 @@ export default function Home() {
               </div>
             </div>
             <div className={impactCard.impactNumbers}>
-              {impact?.number}
+              <NumberTicker value={impact?.number} className={"tracking-tight"}/><span>{impact?.metric}</span>
             </div>
             <div className={impactCard.impactAbout}>
               {impact?.about}
@@ -125,7 +177,7 @@ export default function Home() {
           <div className="mt-[30px] grid grid-cols-12 gap-[8px] md:gap-x-[18px] md:gap-y-[26px]">
 
             {
-              sustainabilityList.map((green)=> <div key={green.title} className={greenCard.card}>
+              sustainabilityList.map((green)=> <div key={green.title} className={`${greenCard.card} sustainCard`}>
               <div className={greenCard.iconContainer}>
                 <div className={`icon_image ${greenCard.icon}`}>
                   <Image
@@ -166,7 +218,7 @@ export default function Home() {
               <div className="h-[13px] w-[13px] rounded-[3px] bg-white p-1 sm:h-[22px] sm:w-[22px] sm:rounded-[4px] md:p-[6px] lg:h-[40px] lg:w-[40px] lg:rounded-[6px] lg:p-[11px]">
                 <Image
                   src="/arrow_insert.svg"
-                  className="w-[100%] h-[100%]"
+                  className="w-[100%] h-[100%] icon-shake"
                   width={100}
                   height={100}
                   alt="arrow insert"

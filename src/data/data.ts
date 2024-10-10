@@ -2,25 +2,29 @@ export const impactList = [
   {
     img:"/fossil_fuel.svg",
     title:"Fossil Fuels",
-    number:"240 Tons",
+    number: 240,
+    metric:'Tons',
     about:"of fossil fuels saved, combating climate change."
   },
   {
     img:"/chemicals.svg",
     title:"Chemicals",
-    number:"22 Tons",
+    number:22,
+    metric:'Tons',
     about:"of chemical reduced from manufacturing the new products"
   },
   {
     img:"/earth_metals.svg",
     title:"Earth Metals",
-    number:"240 Tons",
+    number: 240,
+    metric:'Tons',
     about:"less precious metal extracted, preserving habitats."
   },
   {
     img:"/emission.svg",
     title:"SO₂ Emissions",
-    number:"127 kg+",
+    number: 127,
+    metric:'Kg+',
     about:"of sulphur gas emission mitigated, reducing air pollution"
   }
 ];

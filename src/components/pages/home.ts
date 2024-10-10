@@ -20,7 +20,7 @@ export const impactCard = {
 
   impactTitle:"text-[12px] font-semibold leading-[12.32px] sm:text-[15px] sm:leading-[16px] lg:text-[18px] lg:leading-[21.48px]",
 
-  impactNumbers:"mt-[15px] text-center text-[16px] font-bold leading-[19.09px] sm:text-[21px] sm:leading-[25px] lg:text-[30px] lg:leading-[35.8px]",
+  impactNumbers:"mt-[15px] text-center text-[16px] font-bold leading-[19.09px] sm:text-[21px] sm:leading-[25px] lg:text-[30px] lg:leading-[35.8px] flex gap-[5px] justify-center",
 
   impactAbout:"mt-[10px] w-[100%] text-center text-[10px] font-normal leading-[11.93px] sm:mt-[13px] sm:text-[11px] sm:leading-[12px] lg:mt-[15px] lg:text-[12px] lg:leading-[14.32px]"
 }
