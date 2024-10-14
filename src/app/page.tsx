@@ -1,60 +1,11 @@
-'use client'
-import { GradualSpacing } from "@/components/ui/GradualSpacing";
-import { NumberTicker } from "@/components/ui/NumberTicker";
-import { greenCard, heroNumberSection, impactCard } from "@/components/pages/home";
-import { impactList, sustainabilityList } from "@/data/data";
+import { GradualSpacing } from "@/components/ui/animation/GradualSpacing";
+import { NumberTicker } from "@/components/ui/animation/NumberTicker";
+import { heroNumberSection } from "@/components/pages/home";
 import Image from "next/image";
-import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import ImpactComponent from "@/components/ui/components/ImpactComponent";
+import SustainComponent from "@/components/ui/components/SustainComponent";
 
 export default function Home() {
-
-  gsap.registerPlugin(ScrollTrigger);
-
-  useGSAP(()=>{
-    gsap.from('.impactCard',{
-      opacity: 0,
-      duration: 1,
-      delay: 0,
-      y: 40,
-      stagger:1,
-      scrollTrigger:{
-        trigger:'.impactCard',
-        start:'top 90%',
-        end:'top 70%',
-        markers: true,
-        scroller:'body',
-        scrub: 2
-      }
-    })
-
-    gsap.from('.sustainCard', {
-      opacity: 0,
-      duration: 1,
-      delay: 0,
-      y: 40,
-      stagger:1,
-      scrollTrigger:{
-        trigger:'.sustainCard',
-        start:'top 90%',
-        end:'top 70%',
-        markers: true,
-        scroller:'body',
-        scrub: 2
-      }
-    })
-
-    gsap.to('.icon-shake',{
-      rotation: 10,    
-      yoyo: true, 
-      repeat: -1, 
-      duration: 0.1,
-      ease: "power1.inOut" 
-    })
-  })
-
-
 
   return (
     <div className="flex w-full flex-col items-center">
@@ -109,36 +60,8 @@ export default function Home() {
         <div className="title mb-[20px] text-center text-[16px] font-bold uppercase leading-[19.09px] sm:mb-[30px] sm:text-[22px] md:leading-[35px] lg:text-[30px]">
           The impact in Numbers
         </div>
-        <div className="impact_grid grid w-[100%] grid-cols-12 gap-[14px] md:gap-[22px]">
 
-          {
-            impactList?.map((impact) => 
-            <div className={`${impactCard.card} impactCard`}>
-            <div className={impactCard.iconContainer}>
-              <div className={`icon_image ${impactCard.icon}`}>
-                <Image
-                  src={impact?.img}
-                  className="w-[100%] h-[100%]"
-                  alt="impact icon"
-                  width={100}
-                  height={100}
-                  unoptimized
-                />
-              </div>
-              <div className={impactCard.impactTitle}>
-                {impact?.title}
-              </div>
-            </div>
-            <div className={impactCard.impactNumbers}>
-              <NumberTicker value={impact?.number} className={"tracking-tight"}/><span>{impact?.metric}</span>
-            </div>
-            <div className={impactCard.impactAbout}>
-              {impact?.about}
-            </div>
-          </div>)
-          }
-
-        </div>
+        <ImpactComponent/>
 
         <div className="mt-[25px] max-w-[360px] text-center text-[12px] font-semibold leading-[14.32px] sm:mt-[36px] sm:w-[100%] sm:max-w-[100%] sm:text-[16px] sm:leading-[18px] lg:mt-[50px] lg:text-[23px] lg:leading-[29.83px]">
           By using a renewed product, we are eliminating the consumption of
@@ -174,32 +97,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="mt-[30px] grid grid-cols-12 gap-[8px] md:gap-x-[18px] md:gap-y-[26px]">
-
-            {
-              sustainabilityList.map((green)=> <div key={green.title} className={`${greenCard.card} sustainCard`}>
-              <div className={greenCard.iconContainer}>
-                <div className={`icon_image ${greenCard.icon}`}>
-                  <Image
-                    src={green?.img}
-                    className="w-[100%] h-[100%]"
-                    width={100}
-                    height={100}
-                    alt="sustainable icon"
-                    unoptimized
-                  />
-                </div>
-                <div className={greenCard.greenTitle}>
-                  {green?.title}
-                </div>
-              </div>
-              <div className={greenCard.greenAbout}>
-                {green?.about}
-              </div>
-            </div>)
-            }
-
-          </div>
+          <SustainComponent/>
 
           {/* join_us_section */}
           <div className="join_us_section my-[20px] flex w-[100%] justify-center text-[12px] font-semibold leading-[14.32px] sm:my-[35px] sm:text-[14px] sm:leading-[17.32px] lg:mb-[30px] lg:mt-[56px] lg:text-[22px] lg:leading-[27.03px]">
